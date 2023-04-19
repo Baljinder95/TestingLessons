@@ -9,7 +9,7 @@ from selenium.webdriver.common.action_chains import ActionChains
 
 driver = webdriver.Chrome(executable_path="D://chromedriver.exe")
 driver.get("http://demostore.supersqa.com/")
-driver.set_window_size(1000, 1000)
+driver.set_window_size(1001, 1001)
 time.sleep(1)
 
 driver.find_element(By.XPATH,
