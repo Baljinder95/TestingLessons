@@ -9,11 +9,10 @@ from selenium.webdriver.common.action_chains import ActionChains
 
 driver = webdriver.Chrome(executable_path="D://chromedriver.exe")
 driver.get("http://demostore.supersqa.com/")
-driver.set_window_size(1000, 1000)
+driver.set_window_size(1001, 1001)
 time.sleep(1)
 
-driver.find_element(By.XPATH,
-                    "(//a[@class='button product_type_simple add_to_cart_button ajax_add_to_cart'])[1]").click()
+driver.find_element(By.XPATH,"(//a[@class='button product_type_simple add_to_cart_button ajax_add_to_cart'])[1]").click()
 time.sleep(1)
 driver.find_element(By.XPATH,"(//a[@class='button product_type_simple add_to_cart_button ajax_add_to_cart'])[2]").click()
 time.sleep(2)
@@ -29,6 +28,9 @@ driver.find_element(By.XPATH,"(//a[@class='button product_type_simple add_to_car
 time.sleep(2)
 driver.find_element(By.XPATH,"(//a[@class='button product_type_simple add_to_cart_button ajax_add_to_cart'])[8]").click()
 time.sleep(1)
+
+
+
 driver.find_element(By.XPATH, "//ul[@id='site-header-cart']").click()
 time.sleep(1)
 driver.find_element(By.ID, "shipping_method_0_flat_rate1").click()
